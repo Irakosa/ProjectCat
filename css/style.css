@@ -4,12 +4,16 @@ body {
 }
 img {
   border: 2px solid #111111;
-  border-radius: 50px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 div {
   padding-bottom: 20px;
   padding-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: #111111;
 }
 input[type="button"] {
   -webkit-appearance: none;
@@ -87,7 +91,7 @@ select {
 }
 canvas {
   border: 2px solid #111111;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 table {
   border-spacing: 0px;

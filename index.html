@@ -8,97 +8,20 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="index.js" defer></script>
+  <script src="js/index.js" defer></script>
 
 </head>
 
 <body>
-<!-- Лабораторная 3 - Start -->
-  <div class="lab3" align="center">
+  <div align="center">
     <img class="icon-title" src="img/catlogo.png" width="57" height="42">
-    <h1 class="title">Здравствуй!</h1>
-    
-
-    <b>Слайд-шоу:</b>
-    <input type="button" value="Start" onclick="startTimer(0); initialBtn(this)">
-    <input type="button" value="Stop" onclick="clearInterval(timer); initialBtn(this)"><br>
-
-    <b>Задать интервал:</b>
-    <input type="number" id="pause" step="500" value="1000" onclick="resetTimer(this, 0)"><br>
-<!-- Лабораторная 3 - Finish -->
-
-<!-- Лабораторная 1 - Start -->
-    <img id="img" onclick="changeImg()" src="img/cat1.jpg" width="533" height="342"><br>
-
-    <b>Имя картинки: </b> 
-    <span id="imgTxt">cat1.jpg</span>
+    <h1 class="title">Здравствуйте!</h1>
+    <a href="labs123.html">Лабораторные №1,2,3</a><br>
+    <a href="lab5.html">Лабораторная №5</a><br>
+    <a href="lab6.html">Лабораторная №6</a><br>
+    <a href="lab7.html">Лабораторная №7</a><br>
+    <a href="lab8.html">Лабораторная №8</a><br>
   </div>
-<!-- Лабораторная 1 - Finish -->
-
-<!-- Лабораторная 5 - Start -->
-  <div class="lab5" align="center">
-    <h2 class="title">Порисуем? :3</h2>
-
-    <b>Random: </b>
-    <input type="button" id="randAll" value="Start" onclick="startTimer(1); initialBtn(this)">
-    <input type="button" value="Stop" onclick="clearInterval(timer); initialBtn(this)"><br>
-
-    <b>Задать скорость: </b>
-    <input type="number" id="pause" step="100" value="500" onclick="resetTimer(this, 1)"><br>
-
-    <canvas id="canvas" width="533" height="342">
-
-    </canvas><br>
-
-    X: <input type="text" value="" id="corX" placeholder="=^.^=">
-    Y: <input type="text" value="" id="corY" placeholder="=^.^="><br>
-
-    Толщина: <input type="number" step="10" value="10" id="wth"><br>
-    <input type="button" value="ТЫК =@.@=" onclick="tapDraw(); initialBtn(this)">
-    <input type="button" value="Очистить" onclick="clearDisp(); initialBtn(this)"><br>
-
-    <h3>Выберите цвет: </h3>
-    <table>
-      <tr>
-        <td>
-          R: <input type="range" id="rangeR" min="0" max="255" value="127" oninput="changeColor(this)"> 
-          <input type="button" id="randR" value="Rand" onclick="changeColor(this); initialBtn(this)">
-          <input type="button" id="banR" value="BAN >.<" onclick="changeColor(this); initialBtn(this)">
-          <br>
-          G: <input type="range" id="rangeG" min="0" max="255" value="127" oninput="changeColor(this)"> 
-          <input type="button" id="randG" value="Rand" onclick="changeColor(this); initialBtn(this)">
-          <input type="button" id="banG" value="BAN >.<" onclick="changeColor(this); initialBtn(this)">
-          <br>
-          B: <input type="range" id="rangeB" min="0" max="255" value="127" oninput="changeColor(this)"> 
-          <input type="button" id="randB" value="Rand" onclick="changeColor(this); initialBtn(this)">
-          <input type="button" id="banB" value="BAN >.<" onclick="changeColor(this); initialBtn(this)">
-        </td>
-        <td>
-          <input background="field" id="mycolor">
-        </td>
-      </tr>
-    </table>
-
-    <b>Случайный цвет: </b>
-    <input type="button" id="randAll" value="RAND" onclick="changeColor(this); initialBtn(this)">
-  </div>
-<!-- Лабораторная 5 - Finish -->
-
-<!-- Лабораторная 2 - Start -->
-  <div class="lab2" align="center">
-    <h2 class="title"h3>Чашечку кофе?</h2>
-    <select onchange="showDescription(this)">
-      <option value="A">Эспрессо</option>
-      <option value="B">Американо</option>
-      <option value="C">Латте, Мокко</option>
-      <option value="D">Растворимый</option>
-      <option value="E">Кофе без кофеина</option>
-    </select>
-    <br>
-    <span><b>Содержание кофеина (на 100 мл): </b></span>
-    <span id="description">250 мг</span>
-  </div>
-<!-- Лабораторная 2 - Finish -->
-
+  
 </body>
 </html>

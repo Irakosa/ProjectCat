@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практикум по web-разработке (ПИ801 Косарикова Ирина Александровна)</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/labs123.js" defer></script>
+
+</head>
+
+<body>
+  <div align="center">
+    <h1>Лабораторные №1,2,3</h1>
+  </div>
+  <!-- Лабораторная 3 - Start -->
+  <div class="lab3" align="center">
+
+    <b>Слайд-шоу:</b>
+    <input type="button" value="Start" onclick="startTimer()">
+    <input type="button" value="Stop" onclick="stopTimer()"><br>
+
+    <b>Задать интервал:</b>
+    <input type="number" id="DD" step="250" value="1000" onclick="resetTimer(this)"><br>
+    <!-- Лабораторная 3 - Finish -->
+
+    <!-- Лабораторная 1 - Start -->
+    <img id="img" onclick="changeImg()" src="img/cat1.jpg" width="533" height="342"><br>
+
+    <b>Имя картинки: </b>
+    <span id="imgTxt">cat1.jpg</span>
+  </div>
+  <!-- Лабораторная 1 - Finish -->
+
+  <!-- Лабораторная 2 - Start -->
+  <div class="lab2" align="center">
+    <h3>Выберите цвет: </h3>
+    <input background="field" id="mycolor">
+    <table>
+      <tr>
+        <td>
+          R: <input type="range" id="rangeR" min="0" max="255" value="127" oninput="changeColor(this)">
+          <input type="button" id="randR" value="Rand" onclick="changeColor(this)">
+          <input type="button" id="banR" value="BAN >.<" onclick="changeColor(this)">
+          <br>
+          G: <input type="range" id="rangeG" min="0" max="255" value="127" oninput="changeColor(this)">
+          <input type="button" id="randG" value="Rand" onclick="changeColor(this)">
+          <input type="button" id="banG" value="BAN >.<" onclick="changeColor(this)">
+          <br>
+          B: <input type="range" id="rangeB" min="0" max="255" value="127" oninput="changeColor(this)">
+          <input type="button" id="randB" value="Rand" onclick="changeColor(this)">
+          <input type="button" id="banB" value="BAN >.<" onclick="changeColor(this)">
+        </td>
+      </tr>
+    </table>
+
+    <b>Случайный цвет: </b>
+    <input type="button" id="randAll" value="RAND" onclick="changeColor(this)">
+    <br>
+    <h2 class="title" h3>Чашечку кофе?</h2>
+    <select onchange="showDescription(this)">
+      <option value="A">Эспрессо</option>
+      <option value="B">Американо</option>
+      <option value="C">Латте, Мокко</option>
+      <option value="D">Растворимый</option>
+      <option value="E">Кофе без кофеина</option>
+    </select>
+    <br>
+    <span><b>Содержание кофеина (на 100 мл): </b></span>
+    <span id="description">250 мг</span>
+  </div>
+  <!-- Лабораторная 2 - Finish -->
+
+</body>
+
+</html>

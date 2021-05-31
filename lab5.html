@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикум по web-разработке (ПИ801 Косарикова Ирина Александровна)</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/lab5.js" defer></script>
+
+</head>
+<body onload="drawRectangle(), drawBox()">
+    <div align="center">
+        <h1>Лабораторная №5</h1>
+    </div>
+    <div align="center">
+        <canvas id="canvas 1" width="600" height="600">
+        </canvas>
+        <br>
+        <input type="button" value="Draw" 
+        onclick="drawRectangle(
+            document.getElementById('x').value,
+            document.getElementById('y').value,
+            document.getElementById('width').value,
+            document.getElementById('height').value
+            )"/>
+        <br>
+        x:<input id="x" type="number" min="0" max="600" step="50" value="0">
+        y:<input id="y" type="number" min="0" max="600" step="50" value="0">
+        <br>
+        width:<input id="width" type="number" min="0" max="600" step="50" value="100">
+        heigth<input id="height" type="number" min="0" max="600" step="50" value="100">    
+    </div>
+    <div align="center">
+        <canvas id="canvas 2" width="600" height="600">
+        </canvas>
+        <br>
+        <input type="button" value="Draw" onclick="startTimer()" />
+        <input type="button" value="Stop" onclick="stopTimer()" />
+        <br>
+        <input type="button" value="Clear" onclick="clearBox()" />
+        <br>
+        Draw delay (ms):<input type="number" id="DD" step="10" min="0" value="50" onchange="changeDD()">
+        <br>
+        red:<input id="redCB" type="checkbox" checked onchange="redCB()" />
+        green:<input id="greenCB" type="checkbox" checked onchange="greenCB()" />
+        blue:<input id="blueCB" type="checkbox" checked onchange="blueCB()" />
+        <br>
+        <div id="status">Clear</div>
+    </div>
+</body>
+</html>
